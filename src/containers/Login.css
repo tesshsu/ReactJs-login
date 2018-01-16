@@ -1,0 +1,38 @@
+@media all and (min-width: 480px) {
+  .Login {
+    padding: 10rem 0;
+  }
+
+  .Login form {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+
+  .Login h4{
+    margin: 3rem auto;
+    color: #00a2d0;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .input-group{
+    display: block;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-control{
+    border-radius: 0.4rem;
+  }
+
+  .btn {
+    border-radius: 2rem;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 4rem;
+    background: linear-gradient(to right, #0090e1,#0098cf,#00a1be,#00a9af,#00abaa,#00aea4,#00b19d); 
+  }
+
+}
