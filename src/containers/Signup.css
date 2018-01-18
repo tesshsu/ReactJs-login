@@ -1,0 +1,25 @@
+@media all and (min-width: 480px) {
+  .Signup {
+    padding: 10rem 0;
+    float: right;
+    margin-right: 10rem;
+  }
+
+  .Signup h4 {
+    margin: 3rem auto;
+    color: #00a2d0;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .Signup form {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+}
+
+.Signup form span.help-block {
+  font-size: 14px;
+  padding-bottom: 10px;
+  color: #999;
+}
