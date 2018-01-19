@@ -6,8 +6,8 @@ export default class Home extends Component {
     return (
       <div className="Home">
         <div className="lander">
-          <h1>Integration login reactjs</h1>
-          <p>BY TESS HSU</p>
+          <h1>TEST INTEGRATION</h1>
+          <p>YATING CHATIRON FRONT END</p>
         </div>
       </div>
     );

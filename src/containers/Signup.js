@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Button, HelpBlock, FormGroup, FormControl, Glyphicon} from "react-bootstrap";
+import { HelpBlock, FormGroup, FormControl, Glyphicon} from "react-bootstrap";
+import LoaderButton from "../components/LoaderButton";
 import "./Signup.css";
 
 export default class Signup extends Component {
@@ -62,17 +63,15 @@ export default class Signup extends Component {
           />
           <HelpBlock>Veuillez vérifier votre email pour le code</HelpBlock>
         </FormGroup>
-        <Button
+        <LoaderButton
           block
           bsSize="large"
           disabled={!this.validateConfirmationForm()}
           type="submit"
           isLoading={this.state.isLoading}
-          text="Verify"
-          loadingText="Verifying…"
-        >
-        Vérifier
-        </Button>
+          text="vérifier"
+          loadingText="Vérifier…"
+        />
       </form>
     );
   }
@@ -114,17 +113,15 @@ export default class Signup extends Component {
           <Glyphicon glyph="lock" />
          </FormControl.Feedback>
         </FormGroup>
-        <Button
+        <LoaderButton
           block
           bsSize="large"
           disabled={!this.validateForm()}
           type="submit"
           isLoading={this.state.isLoading}
-          text="Signup"
+          text="Registré"
           loadingText="Signing up…"
-        >
-        Signing
-        </Button>
+         />
       </form>
     );
   }

@@ -1,11 +1,6 @@
-.Home{
-  background-color: #b8d7fa;
-  padding: 10rem;
-}
-
 .Home .lander {
-  padding: 80px 0;
-  text-align: center;
+  padding: 25rem 0;
+  text-align: right;
 }
 
 .Home .lander h1 {
