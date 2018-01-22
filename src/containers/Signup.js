@@ -16,6 +16,12 @@ export default class Signup extends Component {
       newUser: null
     };
   }
+
+  handleChange = event => {
+    this.setState({
+      [event.target.id]: event.target.value
+    });
+  }
   
   validateForm() {
     return (
@@ -29,13 +35,7 @@ export default class Signup extends Component {
     return this.state.confirmationCode.length > 0;
   }
 
-  handleChange = event => {
-    this.setState({
-      [event.target.id]: event.target.value
-    });
-  }
-
-   handleSubmit = async event => {
+  handleSubmit = async event => {
     event.preventDefault();
 
     this.setState({ isLoading: true });

@@ -23,3 +23,12 @@
   padding-bottom: 10px;
   color: #999;
 }
+
+@media all and (max-width: 480px) {
+  .Signup h4 {
+    margin: 3rem auto;
+    color: #00a2d0;
+    text-align: center;
+    font-weight: 700;
+  }
+}

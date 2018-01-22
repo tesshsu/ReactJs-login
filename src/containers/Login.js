@@ -11,38 +11,38 @@ export default class Login extends Component {
 
     this.state = {
       email: "",
-      password: ""
+      password: "",
+      authticated: null
     };
-  }
-
-  authenticateUser(data,state) {
-    this.setState({ isLoading: true });
-  }
-
-  login(email, password) {
-    const Authuser = {
-      email: "tess.hsu@gmail.com",
-      password: "1234"
-    };    
-    
-    var loginAction;
-    if (Authuser) {
-      loginAction = window.location.href =  "https://www.horoscope.fr/"
-    }
-
-    return (
-      {loginAction}
-    );
-  }
-
-  validateForm() {
-    return this.state.email.length > 0 && this.state.password.length > 0;
   }
 
   handleChange = event => {
     this.setState({
       [event.target.id]: event.target.value
     });
+  }
+
+  validateForm() {
+    return this.state.email.length > 0 && this.state.password.length > 0;
+  }
+
+  login(email, password) {
+
+    this.setState = {
+      email: "tess.hsu@gmail.com",
+      password: "1234"
+    };
+    
+    let loginAction;
+
+    if (this.state.email) {
+      loginAction = window.location.href =  "https://www.horoscope.fr/"
+    }else{
+      loginAction = alert("verifier votre compte")
+    }
+    return (
+      {loginAction}
+    );
   }
 
   handleSubmit = async event => {
@@ -52,7 +52,6 @@ export default class Login extends Component {
 
     try {
       await this.login(this.state.email, this.state.password);
-      alert("Vous etez bien registre");
       //this.props.history.push("/");
     } catch (e) {
       alert(e);
