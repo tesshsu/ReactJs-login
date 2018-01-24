@@ -21,6 +21,7 @@ class App extends Component {
               <RouteNavItem href="/signup"><Glyphicon glyph="pencil" /></RouteNavItem>
               <RouteNavItem href="/login"><Glyphicon glyph="user" /></RouteNavItem>
               <RouteNavItem href="/autre"><Glyphicon glyph="star" /></RouteNavItem>
+              <RouteNavItem href="/api">API</RouteNavItem>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
