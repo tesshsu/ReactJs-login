@@ -11,7 +11,8 @@ export default class Login extends Component {
 
     this.state = {
       email: "",
-      password: ""
+      password: "",
+      authticated: null
     };
   }
 
@@ -26,17 +27,19 @@ export default class Login extends Component {
   }
 
   login(email, password) {
+
+    this.setState = {
+      email: "tess.hsu@gmail.com",
+      password: "1234"
+    };
     
-    // TO DO: defined authticated account method
-    const valideMail = "tess.hsu@gmail.com";
     let loginAction;
 
-    if (email == valideMail) {
+    if (this.state.email === "tess.hsu@gmail.com") {
       loginAction = window.location.href =  "https://www.horoscope.fr/"
     }else{
       loginAction = alert("verifier votre compte")
     }
-
     return (
       {loginAction}
     );
@@ -45,11 +48,14 @@ export default class Login extends Component {
   handleSubmit = async event => {
     event.preventDefault();
 
+    this.setState({ isLoading: true });
+
     try {
       await this.login(this.state.email, this.state.password);
       //this.props.history.push("/");
     } catch (e) {
       alert(e);
+      this.setState({ isLoading: false });
     }
   }
 
