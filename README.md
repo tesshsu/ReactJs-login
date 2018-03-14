@@ -55,6 +55,8 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
+More tutorial go to: http://blog.vacha-design.com/react-js-learning-dairy-part-1/
+
 
 
 
